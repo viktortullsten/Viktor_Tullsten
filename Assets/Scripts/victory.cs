@@ -2,36 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-
-public class HurtScript : MonoBehaviour
-{
-    public string LevelToLoad = "SampleScene";
+public class victory : MonoBehaviour {
+    public string LevelToLoad = "GameMap2"; 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if( collision.gameObject.tag=="Player")
         {
-            print("GameOver");
+            print("Yay");
             SceneManager.LoadScene(LevelToLoad);
-                
-      
         }
         else
         {
-            print("error");
+            print("asd");
         }
     }
-    
-   
-
         
+        
+       
+    
 }
-
-    
-  
-    
-        
-   
-
-
-    // Use this for initialization

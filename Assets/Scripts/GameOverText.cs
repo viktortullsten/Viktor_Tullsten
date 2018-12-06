@@ -2,25 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grounded : MonoBehaviour
+public class GameOverText : MonoBehaviour
 {
-    public int touches;
+
+    public int Hit;
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        touches++;
+        Hit++; 
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        touches--;
+        Hit--;
     }
 
 }
-
-
-
-
-
-
-

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class RestartButtonScript : MonoBehaviour {
-
+    public string LevelToLoad = "GameMap1";
     // Use this for initialization
     void Start() {
 
@@ -15,7 +15,7 @@ public class RestartButtonScript : MonoBehaviour {
     }
     public void restartScene()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(LevelToLoad);
     }
     
 

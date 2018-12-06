@@ -130,6 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   isLeft: 1
+  Ground: {fileID: 0}
 --- !u!114 &114463798387118920
 MonoBehaviour:
   m_ObjectHideFlags: 1
