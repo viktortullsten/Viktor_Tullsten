@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 212535153942277254}
   - component: {fileID: 114399055988183748}
   - component: {fileID: 60097667493395986}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spikes
-  m_TagString: Player
+  m_TagString: fiende
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

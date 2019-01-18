@@ -9,13 +9,13 @@ public class Grounded : MonoBehaviour
     //Om Grounded collidern colliderar med en annan collider kommer touches bli 1 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        touches++;
+        touches = 1;
     }
    
     //Om Grounded collidern inte colliderar med en annan collider(spelaren är i luften) Kommer touches vara -1.
     private void OnTriggerExit2D(Collider2D collision)
     {
-        touches--;
+        touches = 0;
     }
 
 }

@@ -12,7 +12,7 @@ public class HurtScript : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Om collidern som kolliderar med fiende är Player kommer De printa GameOver och Loada den scene som LevleToLoad är inställd på. 
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "fiende")
         {
             print("GameOver");
             SceneManager.LoadScene(LevelToLoad);

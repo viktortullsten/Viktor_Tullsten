@@ -13,15 +13,12 @@ public class playermovment : MonoBehaviour
     public float moveSpeed;
      
     // Bestäm hur högt spelaren ska hoppa genom att sätta värde.
-    public float jumphight;
+    public float jumphight = 15f;
     // refererar till en Rigetbody genom rBody. 
     private Rigidbody2D rbody;
     //Refererar till Grounded scriptet genom groundCheck. 
     public Grounded groundCheck;
-    public Restart Dead1;
-    public Restart Dead2;
-    public Restart Dead3;
-    public Restart Dead4;
+   
     public GameOverText Enemy;
     public float GameOverSpeed = 0.1f; 
     public GameObject gameOverText, restartButton;
@@ -50,28 +47,7 @@ public class playermovment : MonoBehaviour
 
         }
        
-        if (Dead1.noMovement > 0)
-        {
-            moveSpeed = 0;
-            jumphight = 0;
-            
-        }
-        if (Dead2.noMovement > 0)
-        {
-            moveSpeed = 0;
-            jumphight = 0;
-        }
-        if (Dead3.noMovement > 0)
-        {
-            moveSpeed = 0;
-            jumphight = 0;
-        }
-        if (Dead4.noMovement > 0)
-        {
-            moveSpeed = 0;
-            jumphight = 0;
-        }
-
+        
 
 
 

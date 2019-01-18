@@ -53,6 +53,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4718389318093210}
+  - component: {fileID: 114033497308419682}
   - component: {fileID: 212890674639777438}
   - component: {fileID: 61477653196926090}
   - component: {fileID: 50819496627252496}
@@ -222,6 +223,24 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1607189736139268}
   m_Enabled: 1
+--- !u!114 &114033497308419682
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906986956199606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c841b7fa22d237e468cc35842729899a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 0}
+  gameOverText: {fileID: 1626565533919780, guid: 91a9779ead0a05e43870244f5d2afd59,
+    type: 2}
+  restartButton: {fileID: 1352289923068834, guid: 12f06582cfb53814c9cccd32236f0a73,
+    type: 2}
+  GameOverSpeed: 0.3
+  noMovement: 0
 --- !u!114 &114111090809451794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -236,9 +255,14 @@ MonoBehaviour:
   moveSpeed: 5
   jumphight: 10
   groundCheck: {fileID: 114900651078025592}
+  Dead1: {fileID: 0}
+  Dead2: {fileID: 0}
+  Dead3: {fileID: 0}
+  Dead4: {fileID: 0}
+  Enemy: {fileID: 0}
+  GameOverSpeed: 0.1
   gameOverText: {fileID: 0}
   restartButton: {fileID: 0}
-  boold: {fileID: 0}
 --- !u!114 &114900651078025592
 MonoBehaviour:
   m_ObjectHideFlags: 1
